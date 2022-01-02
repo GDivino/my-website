@@ -1,9 +1,8 @@
 import { useState } from 'react'
-import { index as Landing } from '../pages/landing'
-import '../styles/App.scss'
+import Landing from '../pages/landing/index'
 
 const App = () => {
-  <Landing />
+  return <Landing />
 }
 
 export default App
