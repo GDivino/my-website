@@ -1,0 +1,45 @@
+@import './index.scss';
+
+#landing {
+    z-index: 0;
+    pointer-events: none;
+    width: 0;
+    height: 0;
+}
+
+.landing-info {
+    position: relative;
+    left: 42vw;
+    width: 50vw;
+}
+
+.greeting, .name, .short-desc, .long-desc {
+    pointer-events: none;
+    font-family: $regular-400;
+}
+
+.greeting {
+    color: $black;
+    font-size: 24px;
+    margin: 0;
+}
+
+.name {
+    color: $blue;
+    font-size: 96px;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+.short-desc {
+    color: $black;
+    font-size: 48px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.long-desc {
+    color: $gray;
+    font-size: 24px;
+    margin: 15px 0;
+}
