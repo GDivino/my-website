@@ -24,6 +24,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: $blue;
+}
+
 .nav-link {
     font-family: $regular-400;
     color: $black;
