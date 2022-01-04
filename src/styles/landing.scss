@@ -2,65 +2,82 @@
 
 #landing {
     z-index: 0;
-    pointer-events: none;
     width: 0;
     height: 0;
 }
 
 .landing-info {
     position: relative;
+    pointer-events: none;
     top: 10vh;
     left: 42vw;
     width: 50vw;
-}
 
-.greeting, .name, .short-desc, .long-desc {
-    pointer-events: none;
-    font-family: $regular-400;
-}
-
-.greeting {
-    color: $black;
-    font-size: 24px;
-    margin: 0;
-}
-
-.name {
-    color: $blue;
-    font-size: 96px;
-    font-weight: 300;
-    margin: 15px 0;
-}
-
-.short-desc {
-    color: $black;
-    font-size: 48px;
-    font-weight: 300;
-    margin: 10px 0;
-}
-
-.long-desc {
-    color: $gray;
-    font-size: 24px;
-    margin: 30px 0;
-    font-weight: 300;
-    line-height: 40px;
-}
-
-@media screen and (min-width: 1280px) {
-    .greeting {
-        font-size: 1.3rem;
+    .greeting, .name, .short-desc, .long-desc {
+        pointer-events: none;
+        font-family: $regular-400;
     }
-
+    
+    .greeting {
+        color: $black;
+        font-size: 24px;
+        margin: 0;
+    }
+    
     .name {
-        font-size: 4.5rem;
+        color: $blue;
+        font-size: 96px;
+        font-weight: 300;
+        margin: 15px 0;
     }
     
     .short-desc {
-        font-size: 2.5rem;
+        color: $black;
+        font-size: 48px;
+        font-weight: 300;
+        margin: 10px 0;
     }
-
+    
     .long-desc {
-        font-size: 1.3rem;
+        color: $gray;
+        font-size: 24px;
+        margin: 30px 0;
+        font-weight: 300;
+        line-height: 40px;
+    }
+}
+
+.button {
+    position: absolute;
+    top: 73vh;
+    left: 13vw;
+    background-color: transparent;
+    font-family: $regular-400;
+    color: $blue;
+    font-size: 24px;
+    width: 230px;
+    height: 80px;
+    outline: solid 3px $blue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1280px) {
+    .landing-info {
+        .greeting {
+            font-size: 1.3rem;
+        }
+
+        .name {
+            font-size: 4.5rem;
+        }
+        
+        .short-desc {
+            font-size: 2.5rem;
+        }
+
+        .long-desc {
+            font-size: 1.3rem;
+        }
     }
 }

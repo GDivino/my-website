@@ -27,3 +27,16 @@ canvas {
         pointer-events: auto;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    canvas {
+        position: fixed;
+        top: -16vh;
+        left: -8vw;
+        z-index: -1;
+        width: 115vw!important; 
+        height: 115vh!important;
+        outline: none;
+        pointer-events: auto;
+    }
+}

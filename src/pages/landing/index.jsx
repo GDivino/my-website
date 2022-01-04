@@ -7,7 +7,8 @@ const index = () => {
     
     return (
         <div id='landing'>
-            {width > breakpoint ? <Face /> : <div style={{height: 0, width: 0}} />}
+            {width > breakpoint ? <Face /> : <div style={{display: 'none'}} />}
+            <a href=''><button className='button'>Get In Touch</button></a>
             <div className='landing-info'>
                 <p className='greeting'>Hi my name is</p>
                 <h1 className='name'>Gio Divino.</h1>
