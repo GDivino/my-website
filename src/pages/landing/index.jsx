@@ -2,7 +2,7 @@ import '../../styles/landing.scss'
 import Face from './face/Face'
 
 const index = () => {
-    const breakpoint = 767
+    const breakpoint = 768
     const width = window.innerWidth
     
     return (

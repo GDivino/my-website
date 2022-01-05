@@ -104,6 +104,12 @@
     }
 }
 
+@media screen and (min-width: 1440px) {
+    .button {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 1920px) {
     .landing-info {
         .greeting {
@@ -124,12 +130,6 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
-    .button {
-        left: 16.5vw;
-    }
-}
-
 @media screen and (max-height: 600px) {
     .landing-info {
         .greeting {
@@ -147,5 +147,72 @@
         .long-desc {
             font-size: 1.1rem;
         }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #landing {
+        width: auto;
+        height: 80vh;
+        overflow: scroll;
+        z-index: 1;
+    }
+
+    .landing-info {
+        position: static;
+        pointer-events: auto;
+        margin: 7vh 10vh 0 10vw;
+        width: 80vw;
+    
+        .greeting, .name, .short-desc, .long-desc {
+            pointer-events: auto;
+            font-family: $regular-400;
+        }
+    }
+
+    .button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #landing {
+        height: auto;
+        max-height: 80vh;
+    }
+
+    .landing-info {
+        .greeting {
+            font-size: 1rem;
+        }
+
+        .name {
+            font-size: 4rem;
+        }
+        
+        .short-desc {
+            font-size: 2rem;
+        }
+
+        .long-desc {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (width: 768px) and (height: 1024px) {
+    .landing-info {
+        margin-top: 15vh;
+    }
+}
+
+@media screen and (width: 1024px) and (height: 1366px) {
+    .landing-info {
+        top: 13vh;
+    }
+
+    .button {
+        display: block;
+        margin-top: -300px
     }
 }
