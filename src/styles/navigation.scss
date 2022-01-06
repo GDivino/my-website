@@ -12,24 +12,94 @@
     flex-direction: row;
     align-items: center;
     height: 70px;
+
+    ul {
+        list-style-type: none;
+        margin: 0 40px 0 20px;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $blue;
+    }
+
+    .nav-link {
+        font-family: $regular-400;
+        color: $black;
+        font-size: 1.05rem;
+    }
 }
 
-ul {
-    list-style-type: none;
-    margin: 0 40px 0 20px;
-    padding: 0;
+.burger, .exit {
+    display: none;
 }
 
-a {
-    text-decoration: none;
-}
+@media screen and (max-width: 700px) {
+    .navbar {
+        padding-top: 10vh;
+        position: fixed;
+        display: block;
+        background-color: $white;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
 
-a:hover {
-    color: $blue;
-}
+        ul {
+            margin-inline: auto;
+        }
 
-.nav-link {
-    font-family: $regular-400;
-    color: $black;
-    font-size: 1.05rem;
+        .nav-item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 13vh
+        }
+
+        .nav-link {
+            margin-inline: auto;
+            font-size: 1.4rem;
+        }
+    }
+
+    .burger, .exit {
+        position: fixed;
+        top: 20px;
+        right: 40px;
+        display: block;
+        z-index: 2;
+    }
+
+    .burger div {
+        z-index: 2;
+        width: 35px;
+        height: 2px;
+        background-color: black;
+        margin: 6px 0;
+    }
+
+    #mdiv {
+        width: 25px;
+        height: 25px;
+      }
+      
+      .mdiv {
+        height: 25px;
+        width: 2px;
+        margin-left: 12px;
+        background-color: black;
+        transform: rotate(45deg);
+        Z-index: 1;
+      }
+      
+      .md {
+        height: 25px;
+        width: 2px;
+        background-color: black;
+        transform: rotate(90deg);
+        Z-index: 2;
+      }
 }

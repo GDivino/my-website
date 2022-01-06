@@ -206,6 +206,12 @@
     }
 }
 
+@media screen and (width: 1024px) and (height: 768px) {
+    .button {
+        margin-top: 30px;
+    }
+}
+
 @media screen and (width: 1024px) and (height: 1366px) {
     .landing-info {
         top: 13vh;
