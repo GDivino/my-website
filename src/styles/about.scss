@@ -1,0 +1,127 @@
+@import './index.scss';
+
+#about {
+    width: 100vw;
+    height: calc(100vh - 70px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: calc(100vw - 12vw);
+    margin-inline: 6vw;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#about::-webkit-scrollbar {
+    display: none;
+}
+
+.about-details {
+    width: 60vw;
+    margin-top: 10px;
+
+    .p1 {
+        h2 {
+            font-family: $regular-400;
+            color: $blue;
+            font-size: 3rem;
+            font-weight: 300;
+        }
+
+        p {
+            font-family: $regular-400;
+            color: $black;
+            line-height: 32px;
+            font-size: 1.25rem;
+        }
+
+        a {
+            color: $blue;
+        }
+    }
+
+    .p2 {
+        display: flex;
+        width: 1000px;
+        flex-wrap: wrap;
+        align-items: baseline;
+
+        ul {
+            width:fit-content;
+            font-family: $regular-400;
+            color: $blue;
+            line-height: 32px;
+            font-size: 1.25rem;
+            margin-bottom: 20vh;
+
+            li {
+                margin-right: 60px;
+            }
+            // Arrow style bullet list
+            // list-style: none;
+
+            // li:before {
+            //     position: absolute;
+            //     content: '';
+            //     border-right: 2px solid;
+            //     border-bottom: 2px solid;
+            //     width: 10px;
+            //     height: 10px;
+            //     transform: translateY(-50%) rotate(-45deg);
+            // }
+        }
+    }
+}
+
+.about-img {
+    width: 235px;
+    height: 376px;
+    border-radius: 31px;
+    transform: translateY(80px);
+    margin-inline-start: auto;
+    pointer-events: none;
+}
+
+
+// Tablet screens
+@media screen and (max-width: 850px) {
+    
+}
+
+
+// Desktop screens
+@media screen and (min-width: 1200px) {
+    .container {
+        width: calc(100vw - 18vw);
+        margin-inline: 9vw;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .container {
+        width: calc(100vw - 30vw);
+        margin-inline: 15vw;
+    }
+
+    .about-details {
+        width: 50vw;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .container {
+        width: calc(100vw - 50vw);
+        margin-inline: 25vw;
+    }
+
+    .about-details {
+        width: 35vw;
+    }
+}
