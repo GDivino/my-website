@@ -1,13 +1,25 @@
+import { useEffect, useState } from 'react'
 import '../../styles/landing.scss'
 import Face from './face/Face'
 
-const index = () => {
-    const breakpoint = 768
-    const width = window.innerWidth
+const Landing = () => {
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+
+    useEffect(() => {
+        const changeWidth = () => {
+            setScreenWidth(window.innerWidth)
+        }
+
+        window.addEventListener('resize', changeWidth)
+
+        return () => {
+            window.removeEventListener('resize', changeWidth)
+        }
+    }, [])
     
     return (
         <div id='landing'>
-            {width > breakpoint ? <Face /> : <div style={{display: 'none'}} />}
+            {screenWidth > 768 && <Face />}
             <a href='/contact'><button className='button'>Get In Touch</button></a>
             <div className='landing-info'>
                 <p className='greeting'>Hi my name is</p>
@@ -19,4 +31,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Landing
