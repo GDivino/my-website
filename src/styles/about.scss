@@ -54,7 +54,7 @@
         align-items: baseline;
 
         ul {
-            width:fit-content;
+            width: fit-content;
             font-family: $regular-400;
             color: $blue;
             line-height: 32px;
@@ -81,6 +81,10 @@
 }
 
 .about-img {
+    background-image: url('../static/about/Idpic_final.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 235px;
     height: 376px;
     border-radius: 31px;
@@ -90,9 +94,40 @@
 }
 
 
-// Tablet screens
+// Tablet/Mobile screens
 @media screen and (max-width: 850px) {
-    
+    .about-img {
+        background-position: 0 -40px;
+        width: 150px;
+        height: 150px;
+        border-radius: 600px;
+        margin-inline-start: 0;
+        margin-inline-end: auto;
+        margin-top: 50px;
+        transform: none;
+    }
+
+    .about-details {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .about-img {
+        margin-top: 100px;
+    }
+
+    .about-details {
+        margin-top: 0;
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        .p2 ul li {
+            margin-right: 10vw;
+        }
+    }
 }
 
 
