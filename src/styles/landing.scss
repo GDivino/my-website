@@ -216,3 +216,11 @@
         margin-top: -300px
     }
 }
+
+@media screen and (width: 1920px) and (height: 1080px) {
+    .landing-info {
+        .long-desc {
+            width: 40vw;
+        }
+    }
+}
