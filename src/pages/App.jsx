@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { useState } from 'react'
 import Landing  from '../pages/landing/index'
 import About from '../pages/about/index'
+import Experience from '../pages/experience/index'
 import Navigation from '../pages/navigation/index'
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Landing />} />
         <Route path='/about' element={<About />} />
+        <Route path='/experience' element={<Experience />} />
       </Routes>
     </Router>
   )
