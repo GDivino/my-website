@@ -61,6 +61,8 @@
     .selection li:hover {
         background-color: $light-purple;
         transition-delay: 0.1s;
+        color: $blue;
+        border-color: $blue;
     }
 
     .selection .chosen {
