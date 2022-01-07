@@ -12,7 +12,7 @@
         align-items: flex-start;
         flex-wrap: wrap;
         justify-content: left;
-        width: calc(100vw - 12vw);
+        width: 88vw;
         margin-inline: 6vw;
         -ms-overflow-style: none;
         scrollbar-width: none;
@@ -96,6 +96,11 @@
 
 // Tablet/Mobile screens
 @media screen and (max-width: 850px) {
+    #about .container{
+        width: 80vw;
+        margin-inline: auto;
+    }
+
     .about-img {
         background-position: 0 -40px;
         width: 150px;
@@ -108,7 +113,7 @@
     }
 
     .about-details {
-        width: 90vw;
+        width: 80vw;
     }
 }
 
@@ -125,7 +130,7 @@
         }
 
         .p2 ul li {
-            margin-right: 10vw;
+            margin-right: 5vw;
         }
     }
 }

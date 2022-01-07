@@ -1,6 +1,6 @@
 const Dashlabs = () => {
     return (
-        <div id='career-info'>
+        <div className='career-info'>
             <div className='container'>
                 <h3>Software Engineer @ <a>Dashlabs.ai</a></h3>
                 <p className='date'>August 2021 - November 2021</p>

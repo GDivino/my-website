@@ -5,91 +5,99 @@
     height: calc(100vh - 70px);
     overflow-y: scroll;
     overflow-x: hidden;
+
+    .container {
+        width: 86vw;
+        margin-inline: auto;
+    
+        .experience-info .container {
+            height: auto;
+            width: auto;
+        }
+    }
 }
 
-.container {
-    width: 86vw;
-    margin-inline: auto;
+.title {
+    width: 100vw;
 
-    .experience-info .container {
-        height: auto;
-        width: auto;
+    h2 {
+        font-family: $regular-400;
+        font-weight: 300;
+        color: $blue;
+        font-size: 3rem;
+    }
+}
+
+.experience-info {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    flex-wrap: wrap;
+
+    .selection {
+        width: 20vw;
+        margin-right: 70px;
     }
 
-    .title {
-        width: 100vw;
+    .selection ul {
+        width: 20vw;
+        padding-left: 5px;
+        margin-top: 0;
+    }
 
-        h2 {
+    .selection li {
+        max-width: 200px;
+        font-family: $regular-400;
+        color: $gray;
+        line-height: 32px;
+        margin-bottom: 32px;
+        list-style-type: none;
+        border-left: solid 3px;
+        border-left-color: $black;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+
+    .selection li:hover {
+        background-color: $light-purple;
+        transition-delay: 0.1s;
+    }
+
+    .selection .chosen {
+        border-color: $blue;
+        color: $blue;
+    }
+
+    .career-info {
+        width: calc(65vw - 70px);
+
+        h3 {
+            margin-block: 0;
             font-family: $regular-400;
             font-weight: 300;
-            color: $blue;
-            font-size: 3rem;
-        }
-    }
-
-    .experience-info {
-        display: flex;
-        flex-direction: row;
-        align-content: flex-start;
-
-        .selection ul {
-            width: 20vw;
-            padding-left: 5px;
-            margin-right: 70px;
-            margin-top: 0;
+            font-size: 1.875rem;
+            color: $black;
         }
 
-        .selection li {
+        p {
+            margin-block: 10px;
             font-family: $regular-400;
-            color: $gray;
+            font-size: 1.25rem;
+            color: $black;
             line-height: 32px;
-            margin-bottom: 32px;
-            list-style-type: none;
-            border-left: solid 3px;
-            border-left-color: $black;
-            padding-left: 10px;
-            cursor:pointer;
         }
 
-        .selection li:hover {
-            background-color: $light-purple;
-            transition-delay: 0.1s;
-        }
-
-        .selection .chosen {
-            border-color: $blue;
+        a {
             color: $blue;
         }
 
-        #career-info {
-            h3 {
-                margin-block: 0;
-                font-family: $regular-400;
-                font-weight: 300;
-                font-size: 1.875rem;
-                color: $black;
-            }
+        .date {
+            color: $purple;
+            font-size: 1.5rem;
+        }
 
-            p {
-                margin-block: 10px;
-                font-family: $regular-400;
-                font-size: 1.25rem;
-                color: $black;
-                line-height: 32px;
-            }
-
-            a {
-                color: $blue;
-            }
-
-            .date {
-                color: $purple;
-                font-size: 1.5rem;
-            }
-
-            .container {
-                margin: 0 0 10vh 0;
-            }
+        .container {
+            margin: 0 0 10vh 0;
         }
     }
 }
@@ -98,14 +106,84 @@
     display: none;
 }
 
+@media screen and (max-width: 800px) {
+    .experience-info {
+        .selection {
+            margin: 20px auto 50px auto;
+            width: 86vw;
+            overflow-x: scroll;
+        }
+
+        .selection ul {
+            display: flex;
+            flex-direction: row;
+            padding-left: 0;
+            margin: auto;
+            width: auto;
+            max-width: 86vw;
+            min-width: 184.59px;
+        }
+
+        .selection li {
+            display: table-cell;
+            vertical-align: middle;
+            margin: auto;
+            min-height: 64px;
+            text-align: center;
+            min-width: 195.61px;
+            width: calc(86vw / 3);
+        }
+
+        .career-info {
+            width: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .title {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    h2 {
+        font-size: 2.5rem!important;
+    }
+
+    h3 {
+        font-size: 1.6rem!important;
+    }
+
+    p {
+        font-size: 1rem!important;
+    }
+}
+
 @media screen and (min-width: 1200px) {
-    .container {
-        width: 70vw;
+    #experience .container {
+        width: 79vw;
+    }
+
+    .experience-info .career-info {
+        width: calc(59vw - 40px);
+    }
+
+    .experience-info .selection {
+        margin-right: 40px;
     }
 }
 
 @media screen and (min-width: 1400px) {
-    .container {
+    #experience .container {
         width: 60vw;
+    }
+
+    .experience-info .career-info {
+        width: calc(39vw - 30px);
+    }
+
+    .experience-info .selection {
+        margin-right: 30px;
     }
 }
