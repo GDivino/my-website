@@ -1,0 +1,111 @@
+@import './index.scss';
+
+#experience {
+    width: 100vw;
+    height: calc(100vh - 70px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 86vw;
+    margin-inline: auto;
+
+    .experience-info .container {
+        height: auto;
+        width: auto;
+    }
+
+    .title {
+        width: 100vw;
+
+        h2 {
+            font-family: $regular-400;
+            font-weight: 300;
+            color: $blue;
+            font-size: 3rem;
+        }
+    }
+
+    .experience-info {
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+
+        .selection ul {
+            width: 20vw;
+            padding-left: 5px;
+            margin-right: 70px;
+            margin-top: 0;
+        }
+
+        .selection li {
+            font-family: $regular-400;
+            color: $gray;
+            line-height: 32px;
+            margin-bottom: 32px;
+            list-style-type: none;
+            border-left: solid 3px;
+            border-left-color: $black;
+            padding-left: 10px;
+            cursor:pointer;
+        }
+
+        .selection li:hover {
+            background-color: $light-purple;
+            transition-delay: 0.1s;
+        }
+
+        .selection .chosen {
+            border-color: $blue;
+            color: $blue;
+        }
+
+        #career-info {
+            h3 {
+                margin-block: 0;
+                font-family: $regular-400;
+                font-weight: 300;
+                font-size: 1.875rem;
+                color: $black;
+            }
+
+            p {
+                margin-block: 10px;
+                font-family: $regular-400;
+                font-size: 1.25rem;
+                color: $black;
+                line-height: 32px;
+            }
+
+            a {
+                color: $blue;
+            }
+
+            .date {
+                color: $purple;
+                font-size: 1.5rem;
+            }
+
+            .container {
+                margin: 0 0 10vh 0;
+            }
+        }
+    }
+}
+
+#experience::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 70vw;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .container {
+        width: 60vw;
+    }
+}
