@@ -34,6 +34,17 @@
     }
 }
 
+.logo {
+    position: absolute;
+    align-self: flex-start;
+    margin: 20px 0 0 40px;
+
+    img {
+        height: 50px;
+        width: 50px;
+    }
+}
+
 .burger, .exit {
     display: none;
 }
@@ -62,6 +73,11 @@
         .nav-link {
             margin-inline: auto;
             font-size: 1.4rem;
+        }
+
+        .logo {
+            transform: none;
+            margin-inline: auto;
         }
     }
 
