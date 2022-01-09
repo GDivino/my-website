@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import '../../styles/navigation.scss'
+import Logo from '../../static/logo.svg'
 import { NavLink } from "react-router-dom"
 
 const Burger = () => {
@@ -46,8 +47,15 @@ const Navigation = () => {
 
     return (
         <div id='navigation'>
+            {(screenWidth > 700) && <NavLink className='logo' to='/' onClick={toggleNav}><img src={Logo} /></NavLink>}
             {(screenWidth > 700 || toggleMenu) && 
-                (<nav className='navbar'>
+                <nav className='navbar'>
+                    {screenWidth < 700 &&
+                    <ul>
+                        <li className='nav-item'>
+                            <NavLink className='logo' to='/' onClick={toggleNav}><img src={Logo} /></NavLink>
+                        </li>
+                    </ul>}
                     <ul>
                         <li className='nav-item'>
                             <NavLink className='nav-link' to='/about' onClick={toggleNav}>
@@ -76,7 +84,7 @@ const Navigation = () => {
                             </NavLink>
                         </li>
                     </ul>
-                </nav>)
+                </nav>
             }
             {!toggleMenu && (<a onClick={toggleNav}><Burger className='burger' /></a>)}
             {toggleMenu && (<a onClick={toggleNav}><Exit className='exit'/></a>)}
