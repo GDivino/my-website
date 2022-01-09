@@ -16,3 +16,9 @@ body {
     position: fixed;
     background: $white;
 }
+
+@media screen and (max-width: 700px) {
+    #landing, #projects, #experience, #contact {
+        height: 100vh!important;
+    }
+}
