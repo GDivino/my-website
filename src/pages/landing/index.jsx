@@ -1,22 +1,7 @@
-import { useEffect, useState } from 'react'
 import '../../styles/landing.scss'
 import Face from './face/Face'
 
-const Landing = () => {
-    // const [screenWidth, setScreenWidth] = useState(window.innerWidth)
-
-    // useEffect(() => {
-    //     const changeWidth = () => {
-    //         setScreenWidth(window.innerWidth)
-    //     }
-
-    //     window.addEventListener('resize', changeWidth)
-
-    //     return () => {
-    //         window.removeEventListener('resize', changeWidth)
-    //     }
-    // }, [])
-    
+const Landing = () => {    
     return (
         <div id='landing'>
             <div className='container'>
@@ -28,7 +13,6 @@ const Landing = () => {
                     <p className='long-desc'>I am a Manila-based Software Engineer that specializes in building web-based applications. Currently, I am learning Devops to empower other Developers and create quality products.</p>
                 </div>
             </div>
-            {/* {screenWidth > 768 && <Face />} */}
             <Face />
         </div>
     )

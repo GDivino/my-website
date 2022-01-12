@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import '../../styles/navigation.scss'
 import Logo from '../../static/logo.svg'
-import { NavLink } from "react-router-dom"
 
 const Burger = () => {
     return (
@@ -47,41 +46,41 @@ const Navigation = () => {
 
     return (
         <div id='navigation'>
-            {(screenWidth > 700) && <NavLink className='logo' to='/' onClick={toggleNav}><img src={Logo} /></NavLink>}
+            {(screenWidth > 700) && <a className='logo' href='#landing' onClick={toggleNav}><img src={Logo} /></a>}
             {(screenWidth > 700 || toggleMenu) && 
                 <nav className='navbar'>
                     {screenWidth < 700 &&
                     <ul className='logo-container'>
                         <li className='nav-item'>
-                            <NavLink className='logo' to='/' onClick={toggleNav}><img src={Logo} /></NavLink>
+                            <a className='logo' href='#landing' onClick={toggleNav}><img src={Logo} /></a>
                         </li>
                     </ul>}
                     <ul>
                         <li className='nav-item'>
-                            <NavLink className='nav-link' to='/about' onClick={toggleNav}>
+                            <a className='nav-link' href='#about' onClick={toggleNav}>
                                 About
-                            </NavLink>
+                            </a>
                         </li>
                     </ul>
                     <ul>
                         <li className='nav-item'>
-                            <NavLink className='nav-link' to='/experience' onClick={toggleNav}>
+                            <a className='nav-link' href='#experience' onClick={toggleNav}>
                                 Experience
-                            </NavLink>
+                            </a>
                         </li>
                     </ul>
                     <ul>
                         <li className='nav-item'>
-                            <NavLink className='nav-link' to='/projects' onClick={toggleNav}>
+                            <a className='nav-link' href='#projects' onClick={toggleNav}>
                                 Projects
-                            </NavLink>
+                            </a>
                         </li>
                     </ul>
                     <ul>
                         <li className='nav-item'>
-                            <NavLink className='nav-link' to='/contact' onClick={toggleNav}>
+                            <a className='nav-link' href='#contact' onClick={toggleNav}>
                                 Contact
-                            </NavLink>
+                            </a>
                         </li>
                     </ul>
                 </nav>

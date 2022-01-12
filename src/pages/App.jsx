@@ -1,5 +1,4 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Landing  from '../pages/landing/index'
 import About from '../pages/about/index'
 import Experience from '../pages/experience/index'
@@ -8,19 +7,13 @@ import Navigation from '../pages/navigation/index'
 
 const App = () => {
   return (
-    <Router>
+    <div className='app'>
       <Navigation />
       <Landing />
       <About />
       <Experience />
       <Projects />
-      {/* <Routes>
-        <Route path='/' element={<Landing />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/experience' element={<Experience />} />
-        <Route path='/projects' element={<Projects />} />
-      </Routes> */}
-    </Router>
+    </div>
   )
 }
 
