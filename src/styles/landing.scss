@@ -108,7 +108,7 @@
 
     #landing a .button {
         margin-top: 140%;
-        transform: translateX(27%);
+        transform: translateX(24%);
     }
 }
 
@@ -254,6 +254,31 @@
 @media screen and (max-height: 700px) {
     #landing .container {
         margin-top: 5%;
+    }
+}
+
+@media screen and (width: 1024px) and (min-height: 600px) {
+    .landing-info {
+        .greeting {
+            font-size: 1.3rem;
+        }
+
+        .name {
+            font-size: 4.5rem;
+        }
+        
+        .short-desc {
+            font-size: 2.5rem;
+        }
+
+        .long-desc {
+            font-size: 1.3rem;
+        }
+    }
+
+    #landing a .button {
+        margin-top: 140%;
+        transform: translateX(5%);
     }
 }
 

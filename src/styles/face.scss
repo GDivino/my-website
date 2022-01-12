@@ -63,7 +63,7 @@ canvas {
     }
 }
 
-@media screen and (max-height: 700px) {
+@media screen and (width: 962px) and (max-height: 700px) {
     #container {
         top: -119%;
         left: -10%;
