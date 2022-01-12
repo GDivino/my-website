@@ -12,6 +12,7 @@ canvas {
     height: 115vh!important;
 }
 
+// Desktop screens
 @media screen and (min-width: 1200px) {
     #container {
         top: -119%;
@@ -27,5 +28,44 @@ canvas {
 @media screen and (min-height: 1000px) {
     #container {
         top: -123%;
+    }
+}
+
+// Tablet screens
+@media screen and (max-width: 1000px) {
+    canvas {
+        width: 110vw!important;
+        height: 110vh!important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #container {
+        top: -112%;
+        left: -3%;
+    }
+
+    canvas {
+        width: 105vw!important;
+        height: 105vh!important;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    #container {
+        left: -2%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #container {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    #container {
+        top: -115%;
+        left: -10%;
     }
 }

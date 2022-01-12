@@ -51,7 +51,7 @@ const Navigation = () => {
             {(screenWidth > 700 || toggleMenu) && 
                 <nav className='navbar'>
                     {screenWidth < 700 &&
-                    <ul>
+                    <ul className='logo-container'>
                         <li className='nav-item'>
                             <NavLink className='logo' to='/' onClick={toggleNav}><img src={Logo} /></NavLink>
                         </li>
@@ -86,8 +86,8 @@ const Navigation = () => {
                     </ul>
                 </nav>
             }
-            {!toggleMenu && (<a onClick={toggleNav}><Burger className='burger' /></a>)}
-            {toggleMenu && (<a onClick={toggleNav}><Exit className='exit'/></a>)}
+            {!toggleMenu && (<a onClick={toggleNav}><Burger /></a>)}
+            {toggleMenu && (<a onClick={toggleNav}><Exit /></a>)}
         </div>
     )
 }
