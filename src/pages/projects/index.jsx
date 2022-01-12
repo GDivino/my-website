@@ -11,7 +11,7 @@ const Projects = () => {
             <div className='container'>
                 <div className='project-details'>
                     <h3>Pavilion</h3>
-                    <p>Pavilion is a platform for University clubs and organizations. It allows student-led organizations to post information that people can interact with.</p>
+                    <p>Pavilion is a platform for University clubs and organizations. It allows student-led organizations to post information that people can interact with. <a href='https://dev.gpavilion.org/' target='_blank'>Website coming soon!</a></p>
                     <a href='https://github.com/gdsc-loyola/pavilion' className='link' target='_blank'>
                         <p>Github</p>
                         <img src={LinkImg}/>

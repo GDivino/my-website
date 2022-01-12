@@ -1,10 +1,14 @@
 @import './index.scss';
 
 #navigation {
+    position: fixed;
+    top: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     width: 100vw;
+    z-index: 10;
+    background-color: $white;
 }
 
 .navbar {
@@ -12,15 +16,18 @@
     flex-direction: row;
     align-items: center;
     height: 70px;
+    z-index: 10;
 
     ul {
         list-style-type: none;
         margin: 0 40px 0 20px;
         padding: 0;
+        z-index: 10;
     }
 
     a {
         text-decoration: none;
+        z-index: 10;
     }
 
     a:hover {
@@ -38,6 +45,7 @@
     position: absolute;
     align-self: flex-start;
     margin: 20px 0 0 40px;
+    z-index: 10;
 
     img {
         height: 50px;
@@ -57,7 +65,6 @@
         background-color: $white;
         width: 100vw;
         height: 100vh;
-        z-index: 1;
 
         ul {
             margin-inline: auto;
@@ -86,11 +93,9 @@
         top: 20px;
         right: 40px;
         display: block;
-        z-index: 2;
     }
 
     .burger div {
-        z-index: 2;
         width: 25px;
         height: 2px;
         background-color: black;
@@ -108,7 +113,6 @@
         margin-left: 12px;
         background-color: black;
         transform: rotate(45deg);
-        z-index: 1;
       }
       
       .md {
@@ -116,6 +120,5 @@
         width: 2px;
         background-color: black;
         transform: rotate(90deg);
-        z-index: 2;
       }
 }

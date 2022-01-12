@@ -15,10 +15,36 @@ body {
     margin: 0;
     position: fixed;
     background: $white;
+    overflow: hidden;
 }
 
-@media screen and (max-width: 700px) {
-    #landing, #projects, #experience, #contact {
-        height: 100vh!important;
-    }
+#root {
+    margin-top: 70px;
+    height: calc(100vh - 70px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#root::-webkit-scrollbar {
+    width: 10px;
+    z-index: 11;
+}
+
+/* Track */
+#root::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+  /* Handle */
+#root::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+  /* Handle on hover */
+#root::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#about, #experience, #projects, #contact {
+    margin-top: 100px;
 }

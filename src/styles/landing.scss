@@ -1,73 +1,93 @@
 @import './index.scss';
 
 #landing {
-    z-index: 0;
-    width: 0;
-    height: 0;
+    width: 100vw;
+    height: calc(100vh - 70px);
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        margin-inline: auto;
+        margin-block: calc((100vh - 70px - 480px) / 2);
+        width: 90%;
+        max-height: 500px;
+        z-index: 2;
+    }
+
+    a {
+        z-index: 2;
+        pointer-events: none;
+    
+        .button {
+            position: relative;
+            z-index: 2;
+            margin: 177% 0 0 1%;
+            background-color: transparent;
+            font-family: $regular-400;
+            color: $blue;
+            font-size: 24px;
+            width: 230px;
+            height: 80px;
+            border: solid 5px $blue;
+            border-radius: 10px;
+            cursor: pointer;
+            pointer-events: all;
+        }
+    
+        .button:hover {
+            background-color: $light-purple;
+            transition-delay: 0.1s;
+        }
+    }
 }
 
 .landing-info {
-    position: relative;
+    z-index: 2;
     pointer-events: none;
-    top: 10vh;
-    left: 42vw;
-    width: 50vw;
+    width: 60%;
+    max-width: 518px;
 
     .greeting, .name, .short-desc, .long-desc {
-        pointer-events: none;
-        font-family: $regular-400;
+        margin: 0 0 10px 0;
     }
-    
+
     .greeting {
-        color: $black;
+        font-family: $regular-400;
+        font-weight: 300;
         font-size: 1.5rem;
-        margin: 0;
+        color: $black;
     }
-    
+
     .name {
-        color: $blue;
+        font-family: $regular-400;
+        font-weight: 300;
         font-size: 6rem;
-        font-weight: 300;
-        margin: 15px 0;
+        color: $blue;
     }
-    
+
     .short-desc {
-        color: $black;
+        margin-bottom: 40px;
+        font-family: $regular-400;
+        font-weight: 300;
         font-size: 3rem;
-        font-weight: 300;
-        margin: 10px 0;
+        color: $black;
     }
-    
+
     .long-desc {
-        color: $gray;
-        font-size: 1.5rem;
-        margin: 30px 0;
+        font-family: $regular-400;
         font-weight: 300;
-        line-height: 40px;
+        font-size: 1.5rem;
+        color: $gray;
+        line-height: 32px;
     }
 }
 
-.button {
-    position: absolute;
-    top: 73vh;
-    left: 13vw;
-    background-color: transparent;
-    font-family: $regular-400;
-    color: $blue;
-    font-size: 24px;
-    width: 230px;
-    height: 80px;
-    border: solid 5px $blue;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.button:hover {
-    background-color: $light-purple;
-    transition-delay: 0.1s;
-}
-
-@media screen and (min-width: 1280px) {
+// Desktop media screens
+@media screen and (min-width: 1200px) {
     .landing-info {
         .greeting {
             font-size: 1.3rem;
@@ -85,149 +105,90 @@
             font-size: 1.3rem;
         }
     }
-}
 
-@media screen and (min-height: 900px) {
-    .landing-info {
-        top: 20vh;
-        left: 42vw;
+    #landing a .button {
+        margin-top: 140%;
+        transform: translateX(22%);
     }
 }
 
-@media screen and (min-height: 1080px) {
-    .landing-info {
-        top: 25vh;
+@media screen and (min-width: 1300px) {
+    #landing .container {
+        width: 80%;
     }
-
-    .button {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .button {
-        display: none;
+    #landing a .button {
+        transform: translateX(14%);
     }
 }
 
-@media screen and (min-width: 1920px) {
-    .landing-info {
+@media screen and (min-width: 1400px) {
+    #landing a .button {
+        transform: translateX(18%);
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    #landing .container {
+        width: 70%;
+    }
+    #landing a .button {
+        transform: translateX(9%);
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    #landing a .button {
+        transform: translateX(-1%);
+    }
+
+    #landing .container {
+        width: 60%;
+    }
+}
+
+@media screen and(min-width: 1700px) {
+    #landing a .button {
+        margin-top: 179%;
+        transform: translateX(5%);
+    }
+
+    #landing .container {
+        width: 60%;
+    }
+
+    .landing-info {    
         .greeting {
-            font-size: 1.3rem;
+            font-size: 1.5rem;
         }
-
-        .name {
-            font-size: 4.5rem;
-        }
-        
-        .short-desc {
-            font-size: 2.5rem;
-        }
-
-        .long-desc {
-            font-size: 1.3rem;
-        }
-    }
-}
-
-@media screen and (max-height: 600px) {
-    .landing-info {
-        .greeting {
-            font-size: 1.1rem;
-        }
-
-        .name {
-            font-size: 4.1rem;
-        }
-        
-        .short-desc {
-            font-size: 2.1rem;
-        }
-
-        .long-desc {
-            font-size: 1.1rem;
-        }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #landing {
-        width: auto;
-        height: 80vh;
-        overflow: scroll;
-        z-index: 1;
-    }
-
-    .landing-info {
-        position: static;
-        pointer-events: auto;
-        margin: 7vh 10vh 0 10vw;
-        width: 80vw;
     
-        .greeting, .name, .short-desc, .long-desc {
-            pointer-events: auto;
-            font-family: $regular-400;
-        }
-    }
-
-    .button {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    #landing {
-        margin-top: 30px;
-        height: auto;
-        max-height: 80vh;
-    }
-
-    .landing-info {
-        .greeting {
-            font-size: 1rem;
-        }
-
         .name {
-            font-size: 4rem;
+            font-size: 6rem;
         }
-        
+    
         .short-desc {
-            font-size: 2rem;
+            font-size: 3rem;
         }
-
+    
         .long-desc {
-            font-size: 1rem;
+            font-size: 1.5rem;
         }
     }
 }
 
-@media screen and (width: 768px) and (height: 1024px) {
-    .landing-info {
-        margin-top: 15vh;
+@media screen and (min-width: 1900px) {
+    #landing a .button {
+        transform: translateX(12%);
     }
 }
 
-@media screen and (width: 1024px) and (height: 768px) {
-    .button {
-        margin-top: 30px;
-    }
-}
-
-@media screen and (width: 1024px) and (height: 1366px) {
-    .landing-info {
-        top: 13vh;
-    }
-
-    .button {
-        display: block;
-        margin-top: -300px
+@media screen and (min-height: 1000px) {
+    #landing .container {
+        margin-top: 14%;
     }
 }
 
 @media screen and (width: 1920px) and (height: 1080px) {
-    .landing-info {
-        .long-desc {
-            width: 40vw;
-        }
+    #landing .container {
+        margin-top: 12%;
     }
 }
