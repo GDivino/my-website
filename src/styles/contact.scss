@@ -1,0 +1,70 @@
+@import './index.scss';
+
+#contact {
+    width: 100vw;
+    margin-bottom: 20vh;
+
+    .container {
+        width: 86vw;
+        margin-inline: auto;
+    }
+}
+
+.title {
+    font-family: $regular-400;
+    font-weight: 400;
+    font-size: 3rem;
+    color: $blue;
+}
+
+.desc {
+    font-family: $regular-400;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: $black;
+    width: 82vw;
+    margin-inline: auto;
+    margin-bottom: 50px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: $light-purple;
+    border-radius: 19px;
+    padding: 40px 47px 40px 47px;
+    max-width: 787px;
+    margin-inline: auto;
+
+    h3 {
+        font-family: $regular-400;
+        font-size: 2.19rem;
+        font-weight: 400;
+        color: $black;
+        margin: 0;
+    }
+
+    p {
+        font-family: $regular-400;
+        font-weight: 400;
+        color: $black;
+    }
+
+    .MuiInputBase-colorPrimary {
+        background-color: $white;
+    }
+
+    .button {
+        margin-top: 20px;
+        width: 100px;
+        align-self: flex-end;
+        font-family: $regular-400;
+        background-color: $blue;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .form {
+        padding: 25px;
+    }
+}

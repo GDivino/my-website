@@ -4,9 +4,9 @@ import About from '../pages/about/index'
 import Experience from '../pages/experience/index'
 import Projects from '../pages/projects/index'
 import Navigation from '../pages/navigation/index'
+import Contact from '../pages/contact/index'
 
-class App extends Component {
-  render() {
+const App = () => {
   return (
     <div className='app'>
       <Navigation />
@@ -14,9 +14,9 @@ class App extends Component {
       <About />
       <Experience />
       <Projects />
+      <Contact />
     </div>
   )
-  }
 }
 
 export default App
