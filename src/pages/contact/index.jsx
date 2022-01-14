@@ -25,7 +25,7 @@ const CustomizedTextField = styled(TextField)({
 
     '& .MuiOutlinedInput-root': {
         '& fieldset': {
-            borderColor: '#4120A9'
+            borderColor: '#black'
         },
 
         '&.Mui-focused fieldset': {
