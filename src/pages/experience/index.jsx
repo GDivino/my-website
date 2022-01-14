@@ -22,9 +22,9 @@ const Experience = () => {
     return (
         <div id='experience'>
             <div className='container'>
-                <div className='title'><h2>Experience</h2></div>
+                <div data-aos='fade-right' className='title'><h2>Experience</h2></div>
                 <div className='experience-info'>
-                    <div className='selection'>
+                    <div data-aos='fade-right' className='selection'>
                     <ul>
                         {
                             (org == 'dashlabs') ? 

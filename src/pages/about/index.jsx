@@ -2,7 +2,7 @@ import '../../styles/about.scss'
 
 const About = () => {
     return (
-        <div id='about'>
+        <div data-aos='fade-right' id='about'>
             <div className='container'>
                 <div className='about-img' />
                 <div className='about-details'>
