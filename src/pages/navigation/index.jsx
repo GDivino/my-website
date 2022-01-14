@@ -53,7 +53,7 @@ const Navigation = () => {
                     to='landing'
                     smooth={true}
                     duration={1000}
-                    offset={-70}
+                    offset={-60}
                     onClick={toggleNav}
                 >
                     <img src={Logo} />
@@ -69,7 +69,7 @@ const Navigation = () => {
                                 to='landing' 
                                 smooth={true}
                                 duration={1000}
-                                offset={-70}
+                                offset={-60}
                                 onClick={toggleNav}
                             >
                                 <img src={Logo} />
@@ -84,7 +84,7 @@ const Navigation = () => {
                                 activeClass='active' 
                                 smooth={true} 
                                 duration={1000} 
-                                offset={-70}
+                                offset={-50}
                                 spy={true}
                                 onClick={toggleNav}
                             >
@@ -100,7 +100,7 @@ const Navigation = () => {
                                 onClick={toggleNav}
                                 activeClass='active' 
                                 smooth={true}
-                                offset={-70}
+                                offset={-50}
                                 spy={true}
                                 duration={1000} 
                             >
@@ -116,7 +116,7 @@ const Navigation = () => {
                                 activeClass='active' 
                                 smooth={true} 
                                 duration={1000}
-                                offset={-70}
+                                offset={-50}
                                 spy={true}
                                 onClick={toggleNav}
                             >
@@ -133,7 +133,7 @@ const Navigation = () => {
                                 smooth={true} 
                                 duration={1000}
                                 spy={true}
-                                offset={-70}
+                                offset={-90}
                                 onClick={toggleNav}
                             >
                                 Contact
