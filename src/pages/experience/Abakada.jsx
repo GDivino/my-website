@@ -2,9 +2,9 @@ const Abakada = () => {
     return (
         <div data-aos='fade-left' className='career-info'>
             <div className='container'>
-                <h3>Web Developer @ <a>Abakada Studios</a></h3>
-                <p className='date'>August 2021 - November 2021</p>
-                <p>I was part of the QA team, ensuring that software products were of quality, and bugs were minimized. I also refactored failing features and tests in the system.</p>
+                <h3>Web Developer @ <a href='https://abakadastudios.com' target='_blank'>Abakada Studios</a></h3>
+                <p className='date'>Aptil 2021 - July 2021</p>
+                <p>As a Web Developer Intern of Abakada Studios, I programmed integration scripts for Enterprise Resource Planning (ERP) systems and Learning Management Systems (LMS) using Javascript</p>
             </div>
         </div>
     )

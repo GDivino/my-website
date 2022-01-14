@@ -10,8 +10,8 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-    <script type="module">
+    <script type="module" src="/src/main.jsx" defer></script>
+    <script type="module" defer>
         import { Application } from '/src/pages/landing/face/runtime.js';
         const app = new Application();
         app.load('/src/pages/landing/face/scene.json');
