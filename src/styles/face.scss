@@ -1,48 +1,80 @@
 #container {
     position: relative;
-    top: -130%;
-    left: -11%;
-    width: 115vw;
-    height: 115vh;
+    top: -37vh;
+    left: -16.9%;
+    width: 0;
+    height: 0;
+    z-index: 2;
 }
 
 canvas {
     position: relative;
+    z-index: 2;
     width: 115vw!important;
     height: 115vh!important;
 }
 
+
 // Desktop screens
 @media screen and (min-width: 1200px) {
     #container {
-        top: -119%;
+        left: -22.5%;
     }
 }
 
-@media screen and (min-height: 900px) {
+@media screen and (min-width: 1300px) {
     #container {
-        top: -117%;
+        left: -26.6%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    #container {
+        left: -37.65%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    #container {
+        left: -51.4%;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    #container {
+        left: -52.46%;
+    }
+}
+
+@media screen and (min-height: 600px) {
+    #container {
+        top: -33vh;
+    }
+}
+
+@media screen and (min-height: 700px) {
+    #container {
+        top: -37vh;
+    }
+}
+
+@media screen and (min-height: 800px) {
+    #container {
+        top: -39.5vh;
     }
 }
 
 @media screen and (min-height: 1000px) {
     #container {
-        top: -123%;
+        top: -44vh;
     }
 }
+
 
 // Tablet screens
 @media screen and (max-width: 1000px) {
-    canvas {
-        width: 110vw!important;
-        height: 110vh!important;
-    }
-}
-
-@media screen and (max-width: 900px) {
     #container {
-        top: -112%;
-        left: -3%;
+        left: -13.75%;
     }
 
     canvas {
@@ -51,9 +83,20 @@ canvas {
     }
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 900px) {
     #container {
-        left: -2%;
+        left: -4.5%;
+    }
+
+    canvas {
+        width: 100vw!important;
+        height: 100vh!important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #container {
+        left: -2.9%;
     }
 }
 
@@ -63,22 +106,32 @@ canvas {
     }
 }
 
-@media screen and (width: 962px) and (max-height: 700px) {
+@media screen and (height: 1024px) {
     #container {
-        top: -119%;
-        left: -10%;
+        top: -37vh;
     }
 }
 
-@media screen and (width: 768px) and (max-height: 700px) {
+@media screen and (min-height: 1300px) {
     #container {
-        left: -1%;
+        top: -47vh;
     }
 }
 
-@media screen and (width: 912px) and (min-height: 701px) {
+@media screen and (width: 820px) and (height: 1180px) {
     #container {
-        top: -117%;
-        left: -8%;
+        top: -39vh;
+    }
+}
+
+@media screen and (width: 810px) and (height: 1080px) {
+    #container {
+        top: -37vh;
+    }
+}
+
+@media screen and (width: 800px) and (height: 1280px) {
+    #container {
+        top: -39vh;
     }
 }

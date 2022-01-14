@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Landing  from '../pages/landing/index'
 import About from '../pages/about/index'
 import Experience from '../pages/experience/index'
 import Projects from '../pages/projects/index'
 import Navigation from '../pages/navigation/index'
 
-const App = () => {
+class App extends Component {
+  render() {
   return (
     <div className='app'>
       <Navigation />
@@ -15,6 +16,7 @@ const App = () => {
       <Projects />
     </div>
   )
+  }
 }
 
 export default App

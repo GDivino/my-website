@@ -18,7 +18,7 @@
         margin-bottom: 100px;
         font-size: 3rem;
         color: $blue;
-        font-weight: 300;
+        font-weight: 400;
         width: 80vw;
         margin-inline: auto;
     }
@@ -36,7 +36,7 @@
         margin: 0;
         font-family: $regular-400;
         font-size: 2.25rem;
-        font-weight: 300;
+        font-weight: 400;
         color: $black;
     }
 
@@ -79,12 +79,6 @@
     }
 }
 
-@media screen and (max-width: 500px) {
-    .project-details h3 {
-        font-size: 2rem;
-    }
-}
-
 @media screen and (max-width: 900px) {
     #projects .container {
         width: 80vw;
@@ -102,6 +96,24 @@
     .project-details {
         width: auto;
         transform: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #projects .container {
+        width: 88vw;
+    }
+
+    #projects .title {
+        margin-bottom: 50px;
+    }
+
+    .project-details {
+        padding: 40px 30px 40px 30px;
+
+        h3 {
+            font-size: 2rem;
+        }
     }
 }
 

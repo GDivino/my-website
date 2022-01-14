@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import '../../styles/navigation.scss'
 import Logo from '../../static/logo.svg'
+import { Link } from 'react-scroll'
 
 const Burger = () => {
     return (
@@ -46,41 +47,97 @@ const Navigation = () => {
 
     return (
         <div id='navigation'>
-            {(screenWidth > 700) && <a className='logo' href='#landing' onClick={toggleNav}><img src={Logo} /></a>}
+            {(screenWidth > 700) && 
+                <Link 
+                    className='logo' 
+                    to='landing'
+                    smooth={true}
+                    duration={1000}
+                    offset={-70}
+                    onClick={toggleNav}
+                >
+                    <img src={Logo} />
+                </Link>
+            }
             {(screenWidth > 700 || toggleMenu) && 
                 <nav className='navbar'>
                     {screenWidth < 700 &&
                     <ul className='logo-container'>
                         <li className='nav-item'>
-                            <a className='logo' href='#landing' onClick={toggleNav}><img src={Logo} /></a>
+                            <Link 
+                                className='logo' 
+                                to='landing' 
+                                smooth={true}
+                                duration={1000}
+                                offset={-70}
+                                onClick={toggleNav}
+                            >
+                                <img src={Logo} />
+                            </Link>
                         </li>
                     </ul>}
                     <ul>
                         <li className='nav-item'>
-                            <a className='nav-link' href='#about' onClick={toggleNav}>
+                            <Link 
+                                className='nav-link' 
+                                to='about'
+                                activeClass='active' 
+                                smooth={true} 
+                                duration={1000} 
+                                offset={-70}
+                                spy={true}
+                                onClick={toggleNav}
+                            >
                                 About
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                     <ul>
                         <li className='nav-item'>
-                            <a className='nav-link' href='#experience' onClick={toggleNav}>
+                            <Link 
+                                className='nav-link' 
+                                to='experience' 
+                                onClick={toggleNav}
+                                activeClass='active' 
+                                smooth={true}
+                                offset={-70}
+                                spy={true}
+                                duration={1000} 
+                            >
                                 Experience
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                     <ul>
                         <li className='nav-item'>
-                            <a className='nav-link' href='#projects' onClick={toggleNav}>
+                            <Link 
+                                className='nav-link' 
+                                to='projects'
+                                activeClass='active' 
+                                smooth={true} 
+                                duration={1000}
+                                offset={-70}
+                                spy={true}
+                                onClick={toggleNav}
+                            >
                                 Projects
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                     <ul>
                         <li className='nav-item'>
-                            <a className='nav-link' href='#contact' onClick={toggleNav}>
+                            <Link 
+                                className='nav-link' 
+                                to='contact'
+                                activeClass='active' 
+                                smooth={true} 
+                                duration={1000}
+                                spy={true}
+                                offset={-70}
+                                onClick={toggleNav}
+                            >
                                 Contact
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </nav>

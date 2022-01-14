@@ -30,7 +30,8 @@
             font-family: $regular-400;
             color: $blue;
             font-size: 3rem;
-            font-weight: 300;
+            font-weight: 400;
+            z-index: 3;
         }
 
         p {
@@ -62,18 +63,6 @@
             li {
                 margin-right: 60px;
             }
-            // Arrow style bullet list
-            // list-style: none;
-
-            // li:before {
-            //     position: absolute;
-            //     content: '';
-            //     border-right: 2px solid;
-            //     border-bottom: 2px solid;
-            //     width: 10px;
-            //     height: 10px;
-            //     transform: translateY(-50%) rotate(-45deg);
-            // }
         }
     }
 }
@@ -95,8 +84,9 @@
 // Tablet/Mobile screens
 @media screen and (max-width: 850px) {
     #about .container{
-        width: 80vw;
+        width: 85vw;
         margin-inline: auto;
+        justify-content: none;
     }
 
     .about-img {
@@ -112,6 +102,10 @@
 
     .about-details {
         width: 80vw;
+
+        .p1 p {
+            font-size: 1.1rem
+        }
     }
 }
 

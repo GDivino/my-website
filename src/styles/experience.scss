@@ -19,7 +19,7 @@
     
         h2 {
             font-family: $regular-400;
-            font-weight: 300;
+            font-weight: 400;
             color: $blue;
             font-size: 3rem;
         }
@@ -74,7 +74,7 @@
         h3 {
             margin-block: 0;
             font-family: $regular-400;
-            font-weight: 300;
+            font-weight: 400;
             font-size: 1.875rem;
             color: $black;
         }
@@ -112,6 +112,7 @@
             margin: 20px auto 50px auto;
             width: 86vw;
             overflow-x: scroll;
+            overflow-y: hidden;
         }
 
         .selection ul {
@@ -132,6 +133,7 @@
             min-width: 195.61px;
             width: calc(86vw / 3);
             height: 64px;
+            font-size: 1.25rem;
         }
 
         .career-info {
@@ -153,6 +155,20 @@
 
     h3 {
         font-size: 1.6rem!important;
+    }
+
+    p {
+        font-size: 1rem!important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .experience-info {
+        width: 88vw;
+    }
+
+    .date {
+        font-size: 1.5rem!important;
     }
 
     p {

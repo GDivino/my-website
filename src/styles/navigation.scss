@@ -30,6 +30,11 @@
         z-index: 10;
     }
 
+    .active {
+        color: $blue!important;
+        font-weight: 400;
+    }
+
     a:hover {
         color: $blue;
     }
@@ -38,6 +43,7 @@
         font-family: $regular-400;
         color: $black;
         font-size: 1.05rem;
+        cursor: pointer;
     }
 }
 
@@ -50,6 +56,7 @@
     img {
         height: 50px;
         width: 50px;
+        cursor: pointer;
     }
 }
 

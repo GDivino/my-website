@@ -2,9 +2,8 @@
 
 #landing {
     width: 100vw;
-    height: calc(100vh - 70px);
-    overflow-y: hidden;
-    overflow-x: hidden;
+    height: 100vh;
+    overflow: hidden;
 
     .container {
         display: flex;
@@ -12,7 +11,7 @@
         align-items: flex-start;
         justify-content: space-around;
         margin-inline: auto;
-        margin-block: calc((100vh - 70px - 480px) / 2);
+        margin-block: 10vh;
         width: 90%;
         max-height: 500px;
         z-index: 2;
@@ -57,14 +56,14 @@
 
     .greeting {
         font-family: $regular-400;
-        font-weight: 300;
+        font-weight: 400;
         font-size: 1.5rem;
         color: $black;
     }
 
     .name {
         font-family: $regular-400;
-        font-weight: 300;
+        font-weight: 400;
         font-size: 6rem;
         color: $blue;
     }
@@ -72,14 +71,14 @@
     .short-desc {
         margin-bottom: 40px;
         font-family: $regular-400;
-        font-weight: 300;
+        font-weight: 400;
         font-size: 3rem;
         color: $black;
     }
 
     .long-desc {
         font-family: $regular-400;
-        font-weight: 300;
+        font-weight: 400;
         font-size: 1.5rem;
         color: $gray;
         line-height: 32px;
@@ -88,6 +87,10 @@
 
 // Desktop media screens
 @media screen and (min-width: 1200px) {
+    #landing .container {
+        justify-content: space-evenly;
+    }
+
     .landing-info {
         .greeting {
             font-size: 1.3rem;
@@ -108,7 +111,6 @@
 
     #landing a .button {
         margin-top: 140%;
-        transform: translateX(24%);
     }
 }
 
@@ -181,17 +183,30 @@
     }
 }
 
-@media screen and (min-height: 1000px) {
+@media screen and (min-height: 800px) {
     #landing .container {
-        margin-top: 14%;
+        margin-top: 15vh;
     }
 }
 
-@media screen and (width: 1920px) and (height: 1080px) {
+@media screen and (min-height: 1000px) {
+    #landing .container {
+        margin-top: 25%;
+    }
+}
+
+@media screen and (width: 1920px) and (min-height: 1080px) {
     #landing .container {
         margin-top: 12%;
     }
 }
+
+@media screen and (width: 1280px) and (height: 605px) {
+    #landing .container {
+        margin-top: 13vh;
+    }
+}
+
 
 // Tablet screens
 @media screen and (max-width: 1000px) {
@@ -221,7 +236,7 @@
 
 @media screen and(max-width: 900px) {
     #landing .container {
-        margin-block: calc((100vh - 70px - 480px) / 2);
+        justify-content: space-between;
     }
 
     #landing a .button {
@@ -235,11 +250,12 @@
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) and (max-height: 1000px) {
     #landing .container {
         display: block;
         position: static;
         width: 87%;
+        margin-top: 26%;
     }
 
     #landing a .button {
@@ -257,7 +273,7 @@
     }
 }
 
-@media screen and (width: 1024px) and (min-height: 600px) {
+@media screen and (width: 1024px) and (max-height: 600px) {
     .landing-info {
         .greeting {
             font-size: 1.3rem;
@@ -282,16 +298,32 @@
     }
 }
 
+@media screen and (min-height: 1200px) {
+    #landing .container {
+        margin-top: 40%;
+    }
+}
+
+@media screen and (min-height: 1300px) {
+    #landing .container {
+        margin-top: 30%;
+    }
+}
+
 
 // mobile screens
 @media screen and (max-width: 500px) {
+    #landing {
+        height: 70vh;
+    }
+
     .landing-info {
         .greeting {
             font-size: 1.2rem;
         }
 
         .name {
-            font-size: 4rem;
+            font-size: 3.9rem;
         }
         
         .short-desc {

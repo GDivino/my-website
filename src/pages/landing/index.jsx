@@ -5,6 +5,7 @@ const Landing = () => {
     return (
         <div id='landing'>
             <div className='container'>
+                <Face />
                 <a href='/contact'><button className='button'>Get In Touch</button></a>
                 <div className='landing-info'>
                     <p className='greeting'>Hi my name is</p>
@@ -13,7 +14,6 @@ const Landing = () => {
                     <p className='long-desc'>I am a Manila-based Software Engineer that specializes in building web-based applications. Currently, I am learning Devops to empower other Developers and create quality products.</p>
                 </div>
             </div>
-            <Face />
         </div>
     )
 }
