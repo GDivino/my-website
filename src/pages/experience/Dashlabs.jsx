@@ -10,7 +10,7 @@ const Dashlabs = () => {
             <div className='container'>
                 <h3>Client Success Intern @ <a href='https://dashlabs.ai' target='_blank'>Dashlabs.ai</a></h3>
                 <p className='date'>July 2021 - August 2021</p>
-                <p>Provided support to clients to ensure their satisfaction with the system by addressing the bugs and concerns they faced with the system.</p>
+                <p>Provided support to clients to ensure their satisfaction with the system by addressing bugs and concerns with the system.</p>
             </div>
         </div>
     )
