@@ -56,7 +56,7 @@ const Projects = () => {
             <p data-aos='fade-right' className='view-more'>
                 To see more projects I've worked on, check out my github.
             </p>
-            <a data-aos='fade-right' href='https://github.com/GDivino' target='_blank' className='a-view'><button className='view-button'>View Github</button></a>
+            <a href='https://github.com/GDivino' target='_blank' className='a-view'><button data-aos='fade-right' className='view-button'>View Github</button></a>
         </div>
     )
 }

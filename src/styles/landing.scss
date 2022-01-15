@@ -190,8 +190,22 @@
 }
 
 @media screen and (min-height: 1000px) {
+    #landing {
+        height: 70vh;
+    }
+
     #landing .container {
-        margin-top: 25%;
+        margin-top: 15%;
+    }
+}
+
+@media screen and (min-height: 1050px) {
+    #landing {
+        height: 77vh;
+    }
+    
+    #landing .container {
+        margin-top: 11%;
     }
 }
 
@@ -203,7 +217,7 @@
 
 @media screen and (width: 1920px) and (min-height: 1080px) {
     #landing .container {
-        margin-top: 12%;
+        margin-top: 10%;
     }
 }
 

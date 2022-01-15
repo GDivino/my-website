@@ -212,17 +212,6 @@
 
 @media screen and (min-width: 1441px) {
     .project-details {
-        width: 30vw;
-        transform: translateX(15vw);
-    }
-
-    .project-img {    
-        img {
-            transform: translateX(7vw);
-        }
-    
-        .dean-img {
-            transform: translate(13vw, -60px);
-        }
+        margin-left: 10%;
     }
 }
