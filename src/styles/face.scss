@@ -101,6 +101,10 @@ canvas {
 }
 
 @media screen and (max-width: 700px) {
+    #landing {
+        height: auto;
+    }
+
     #container {
         display: none;
     }
