@@ -42,7 +42,7 @@ const Contact = () => {
                 <h2 data-aos='fade-right' className='title'>Contact Me</h2>
                 <p data-aos='fade-left' className='desc'>I do both Frontend and Backend Software Engineering, and I am currently looking for Devops Engineering opportunities. Send me an email by answering the form below!</p>
                 <ThemeProvider theme={THEME}>
-                    <form data-aos='fade-right' action='https://formsubmit.co/giodivino.tech@gmail.com' method='POST' className='form'>
+                    <form data-aos='fade-right' action='https://formsubmit.co/77dad057a76794f5a701327436e6e08f' method='POST' className='form'>
                         <h3>Let's get in touch</h3>
                         <p>Feel free to contact me for job opportunities or coffee chats by answering this form!</p>
                         <CustomizedTextField
