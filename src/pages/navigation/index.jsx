@@ -53,7 +53,7 @@ const Navigation = () => {
                     to='landing'
                     smooth={true}
                     duration={1000}
-                    offset={-60}
+                    offset={-70}
                     onClick={toggleNav}
                 >
                     <img src={Logo} />
@@ -69,7 +69,7 @@ const Navigation = () => {
                                 to='landing' 
                                 smooth={true}
                                 duration={1000}
-                                offset={-60}
+                                offset={-70}
                                 onClick={toggleNav}
                             >
                                 <img src={Logo} />
