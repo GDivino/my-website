@@ -195,6 +195,12 @@
     }
 }
 
+@media screen and (width: 1440px) and (min-height: 1000px) {
+    #landing .container {
+        margin-top: 17%;
+    }
+}
+
 @media screen and (width: 1920px) and (min-height: 1080px) {
     #landing .container {
         margin-top: 12%;

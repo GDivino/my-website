@@ -21,8 +21,9 @@
     font-family: $regular-400;
     font-weight: 400;
     font-size: 1.25rem;
+    line-height: 32px;
     color: $black;
-    width: 82vw;
+    max-width: 850px;
     margin-inline: auto;
     margin-bottom: 50px;
 }
@@ -66,5 +67,11 @@
 @media screen and (max-width: 500px) {
     .form {
         padding: 25px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #contact .container {
+        width: 60vw;
     }
 }
