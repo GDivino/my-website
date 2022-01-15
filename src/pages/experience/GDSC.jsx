@@ -4,13 +4,13 @@ const GDSC = () => {
             <div className='container'>
                 <h3>Chief Technology Officer @ <a href='https://www.gdscloyola.org/' target='_blank'>Google Developer Student Clubs Loyola</a></h3>
                 <p className='date'>August 2021 - Present</p>
-                <p>As the current CTO of Google Developer Student Clubs Loyola, I oversee the building of the organization's products and client work through agile best practices. My job is to align the Engineering, Design, and Data of all the organization's products.</p>
+                <p>Currently overseeing the building of the organization's products and client work through agile best practices, and align the Engineering, Design, and Data of all the organization's products.</p>
             </div>
 
             <div className='container'>
                 <h3>Backend Engineer @ <a href='https://www.gdscloyola.org/' target='_blank'>Google Developer Student Clubs Loyola</a></h3>
                 <p className='date'>August 2020 - March 2021</p>
-                <p>As a Backend Engineer I provided programming support through platform hosting, data integration, and frontend and backend integration using all sorts of tools and languages like heroku, python, firebase, and flask</p>
+                <p>Developed the products of the organization in the fields of cloud hosting, data integration, and frontend and backend integration using tools such as heroku, python, firebase, and flask</p>
             </div>
         </div>
     )

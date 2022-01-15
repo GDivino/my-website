@@ -127,6 +127,16 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+    #about .container {
+        width: 90vw;
+    }
+
+    .about-details {
+        width: 90vw;
+    }
+}
+
 
 // Desktop screens
 @media screen and (min-width: 1200px) {

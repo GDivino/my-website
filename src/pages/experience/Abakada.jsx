@@ -4,7 +4,7 @@ const Abakada = () => {
             <div className='container'>
                 <h3>Web Developer @ <a href='https://abakadastudios.com' target='_blank'>Abakada Studios</a></h3>
                 <p className='date'>Aptil 2021 - July 2021</p>
-                <p>As a Web Developer Intern of Abakada Studios, I programmed integration scripts for Enterprise Resource Planning (ERP) systems and Learning Management Systems (LMS) using Javascript</p>
+                <p>Developed integration scripts for Enterprise Resource Planning (ERP) systems and Learning Management Systems (LMS) using Javascript</p>
             </div>
         </div>
     )
