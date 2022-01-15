@@ -4,7 +4,7 @@ const Dashlabs = () => {
             <div className='container'>
                 <h3>Software Engineer @ <a href='https://dashlabs.ai' target='_blank'>Dashlabs.ai</a></h3>
                 <p className='date'>August 2021 - November 2021</p>
-                <p>As a Software Engineer at Dashlabs, my job was to write software tests to ensure products didn't fail, and bugs were minimized. I also refactored failing features and tests in the system.</p>
+                <p>As a Software Engineer at Dashlabs, I wrote software tests to ensure products didn't fail, and bugs were minimized. I also refactored failing features and tests in the system.</p>
             </div>
 
             <div className='container'>

@@ -10,7 +10,7 @@ const GDSC = () => {
             <div className='container'>
                 <h3>Backend Engineer @ <a href='https://www.gdscloyola.org/' target='_blank'>Google Developer Student Clubs Loyola</a></h3>
                 <p className='date'>August 2020 - March 2021</p>
-                <p>As a Backend Engineer I helped develop the organization's products</p>
+                <p>As a Backend Engineer I provided programming support through platform hosting, data integration, and frontend and backend integration using all sorts of tools and languages like heroku, python, firebase, and flask</p>
             </div>
         </div>
     )
