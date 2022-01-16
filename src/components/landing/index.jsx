@@ -1,12 +1,27 @@
+import { useEffect, useState } from 'react'
 import '../../styles/landing.scss'
 import Face from './face/Face'
 import { Link } from 'react-scroll'
 
-const Landing = () => {    
+const Landing = () => {   
+    const [width, setWidth] = useState(window.innerWidth)
+
+    useEffect(() => {
+        const changeWidth = () => {
+            setWidth(width.innerWidth)
+        }
+
+        window.addEventListener('resize', changeWidth)
+
+        return () => {
+            window.removeEventListener('resize', changeWidth)
+        }
+    }, [])
+    
     return (
         <div id='landing'>
             <div className='container'>
-                <Face />
+                {width > 700 && <Face />}
                 <Link 
                     to='contact'
                     smooth={true}
