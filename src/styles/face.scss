@@ -145,3 +145,10 @@ canvas {
         top: -39vh;
     }
 }
+
+@media screen and (width: 1024px) and (max-height: 600px) {
+    #container {
+        top: -33vh;
+        left: -15.5%;
+    }
+}
