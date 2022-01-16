@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="./src/static/favicon.png" />
-    <link rel="preload" href="./src/pages/landing/face/scene.json" as="fetch">
+    <link rel="preload" href="./src/components/landing/face/scene.json" as="fetch">
     <link rel="stylesheet" href="./src/styles/index.scss">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gio Divino</title>
@@ -12,9 +12,9 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx" defer></script>
     <script type="module" defer>
-        import { Application } from '/src/pages/landing/face/runtime.js';
+        import { Application } from '/src/components/landing/face/runtime.js';
         const app = new Application();
-        app.load('/src/pages/landing/face/scene.json');
+        app.load('/src/components/landing/face/scene.json');
 		</script>
   </body>
 </html>
