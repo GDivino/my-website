@@ -46,7 +46,7 @@ const Projects = () => {
                         <p>Github</p>
                         <img src={LinkImg}/>
                     </a>
-                    <a href='https://startup-summit.org/' className='link' target='_blank'>
+                    <a href='https://startup-summit-83da6.firebaseapp.com/' className='link' target='_blank'>
                         <p>Website</p>
                         <img src={LinkImg}/>
                     </a>
