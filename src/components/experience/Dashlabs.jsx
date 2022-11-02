@@ -4,13 +4,13 @@ const Dashlabs = () => {
             <div className='container'>
                 <h3>Software Engineer @ <a href='https://dashlabs.ai' target='_blank'>Dashlabs.ai</a></h3>
                 <p className='date'>August 2021 - November 2021</p>
-                <p>Developed software tests to ensure good quality of products, and minimized bugs, and refactored failing features in the system.</p>
+                <p>Ensured high quality of products by writing software tests with Jest, and fixed bugs in code.</p>
             </div>
 
             <div className='container'>
                 <h3>Client Success Intern @ <a href='https://dashlabs.ai' target='_blank'>Dashlabs.ai</a></h3>
                 <p className='date'>July 2021 - August 2021</p>
-                <p>Provided support to clients to ensure their satisfaction with the system by addressing bugs and concerns with the system.</p>
+                <p>Provided Account Management support to clients to ensure satisfaction with the product.</p>
             </div>
         </div>
     )
