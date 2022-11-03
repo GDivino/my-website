@@ -55,12 +55,16 @@
         padding-left: 10px;
         font-weight: 400;
         cursor: pointer;
+
+        background: linear-gradient(to right, $light-purple 50%, $white 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all .25s ease-out;
     }
 
     .selection li:hover {
-        background-color: $light-purple;
-        transition-delay: 0.1s;
         color: $blue;
+        background-position: left bottom;
         border-color: $blue;
     }
 
