@@ -25,7 +25,6 @@
             position: relative;
             z-index: 2;
             margin: 177% 0 0 1%;
-            background-color: transparent;
             font-family: $regular-400;
             color: $blue;
             font-size: 24px;
@@ -35,11 +34,15 @@
             border-radius: 10px;
             cursor: pointer;
             pointer-events: all;
+
+            background: linear-gradient(to right, $light-purple 50%, transparent 50%);
+            background-size: 200% 100%;
+            background-position: right bottom;
+            transition: all .25s ease-out!important;
         }
-    
+
         .button:hover {
-            background-color: $light-purple;
-            transition-delay: 0.1s;
+            background-position: left bottom;
         }
     }
 }

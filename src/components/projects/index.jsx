@@ -53,10 +53,12 @@ const Projects = () => {
                 </div>
                 <div data-aos='fade-left' className='project-img'><img src={SusImg} /></div>
             </div>
-            <p data-aos='fade-right' className='view-more'>
-                To see more projects I've worked on, check out my github.
-            </p>
-            <a href='https://github.com/GDivino' target='_blank' className='a-view'><button data-aos='fade-right' className='view-button'>View Github</button></a>
+            <div data-aos='fade-right'>
+                <p className='view-more'>
+                    To see more projects I've worked on, check out my github.
+                </p>
+                <a href='https://github.com/GDivino' target='_blank' className='a-view'><button className='view-button'>View Github</button></a>
+            </div>
         </div>
     )
 }
