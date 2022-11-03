@@ -31,7 +31,7 @@ const Projects = () => {
                         <p>Github</p>
                         <img src={LinkImg}/>
                     </a>
-                    <a href='https://www.facebook.com/dean.dscloyola' className='link' target='_blank'>
+                    <a href='https://www.facebook.com/dean.gdscloyola' className='link' target='_blank'>
                         <p>Facebook Page</p>
                         <img src={LinkImg}/>
                     </a>

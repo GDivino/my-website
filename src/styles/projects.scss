@@ -51,17 +51,76 @@
     a {
         color: $blue;
         text-decoration: none;
+        display: inline-block;
+        position: relative;
+    }
+
+    a:after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+        background-color: $blue
+    }
+
+    a:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
     }
 
     .link {
         display: flex;
         flex-direction: row;
         text-decoration: none;
+        position: auto;
         
         p {
             margin: 0 5px 0;
             color: $blue;
+            display: inline-block;
+            position: relative;
         }
+
+        p:after {
+            content: '';
+            position: absolute;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+            background-color: $blue
+        }
+
+        p:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    }
+
+    .link:after {
+        content: auto;
+        position: auto;
+        height: auto;
+        bottom: auto;
+        left: auto;
+        width: auto;
+        transform: auto;
+        transform-origin: auto;
+        transition: auto;
+        background-color: auto;
+    }
+
+    .link:hover:after {
+        transform: auto;
+        transform-origin: auto;
     }
 }
 

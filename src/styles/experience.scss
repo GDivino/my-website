@@ -91,6 +91,26 @@
         a {
             color: $blue;
             text-decoration: none;
+            display: inline-block;
+            position: relative;
+        }
+
+        a:after {
+            position: absolute;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            content: '';
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+            background-color: $blue
+        }
+
+        a:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
         }
 
         .date {
