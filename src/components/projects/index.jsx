@@ -11,7 +11,7 @@ const Projects = () => {
             <div className='container'>
                 <div data-aos='fade-right' className='project-details'>
                     <h3>Pavilion</h3>
-                    <p>Pavilion is a platform for University clubs and organizations. It allows student-led organizations to post information that people can interact with. <a href='https://dev.gpavilion.org/' target='_blank'>Website coming soon!</a></p>
+                    <p>Pavilion is an events management platform for University Organizations. It is the place to go to experience the University's org culture. <a href='https://staging.gpavilion.org/' target='_blank'>Website coming soon!</a></p>
                     <a href='https://github.com/gdsc-loyola/pavilion' className='link' target='_blank'>
                         <p>Github</p>
                         <img src={LinkImg}/>
@@ -26,7 +26,7 @@ const Projects = () => {
             <div className='container'>
                 <div data-aos='fade-right' className='project-details'>
                     <h3>DEAN</h3>
-                    <p>DEAN is a Facebook chatbot that can search Google. It was created in order to help students without wifi connection adapt to the online setting.</p>
+                    <p>DEAN is a Facebook chatbot that can scrape articles online. It was created in order to help students without wifi connection adapt to the online setting.</p>
                     <a href='https://github.com/gdsc-loyola/DEAN-the-google-chatbot' className='link' target='_blank'>
                         <p>Github</p>
                         <img src={LinkImg}/>
@@ -41,7 +41,7 @@ const Projects = () => {
             <div className='container'>
                 <div data-aos='fade-right' className='project-details'>
                     <h3>Startup Summit</h3>
-                    <p>Startup Summit is a 3-day online tech conference held last April, 2021. The event connects students and startups together to help build each other's futures and become catalysts for impactful change.</p>
+                    <p>Startup Summit is a 3-day online tech conference held last April, 2021. The event connects students and startups together to help build the future and become catalysts for impactful change.</p>
                     <a href='https://github.com/BYTE-ADMU/startup-summit' className='link' target='_blank'>
                         <p>Github</p>
                         <img src={LinkImg}/>

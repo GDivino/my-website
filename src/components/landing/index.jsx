@@ -33,8 +33,8 @@ const Landing = () => {
                 <div className='landing-info'>
                     <p className='greeting'>Hi my name is</p>
                     <h1 className='name'>Gio Divino.</h1>
-                    <h4 className='short-desc'>I build healthy infra and smooth ops</h4>
-                    <p className='long-desc'>I am a Manila-based DevOps Engineer that creates smooth operations, and builds healthy IT infrastructure. Currently, I am looking for DevOps opportunities to grow into a complete engineer.</p>
+                    <h4 className='short-desc'>I build smooth and healthy IT Infra</h4>
+                    <p className='long-desc'>I am a Manila-based DevOps Engineer that creates smooth operations, and builds healthy IT infrastructure. Currently, I am looking for DevOps opportunities to grow as a complete engineer.</p>
                 </div>
             </div>
         </div>
