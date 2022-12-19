@@ -12,7 +12,7 @@ const About = () => {
                             
                         <p> My tech journey started last August, 2020, just when the pandemic struck the world. I learned how to program, and built all sorts of things, and it was awesome! </p>
                         
-                        <p>As of today, I've grown my experience by working in <a href='https://abakadastudios.com' target='_blank'>edtech</a>, <a href='https://dashlabs.ai' target='_blank'>healthtech</a>, and <a href='https://xendit.co' target='_blank'>fintech companies</a>, <a href='https://www.ycombinator.com/' target='_blank'>2 Y-Combinator Companies</a>, <a href='https://gdscloyola.org' target='_blank'> a student-led developer organization</a>, and maybe even for you 😉!</p>
+                        <p>As of today, I've grown my experience by working in <a href='https://abakadastudios.com' target='_blank'>edtech</a>, <a href='https://dashlabs.ai' target='_blank'>healthtech</a>, and <a href='https://xendit.co' target='_blank'>fintech</a> companies, 2 <a href='https://www.ycombinator.com/' target='_blank'>Y-Combinator Companies</a>, <a href='https://gdscloyola.org' target='_blank'> a student-led developer organization</a>, and maybe even for you 😉!</p>
                         
                         <p>I hope to continue making an impact through tech by building and learning!</p>
 
