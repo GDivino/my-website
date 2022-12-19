@@ -1,4 +1,10 @@
 import '../../../styles/face.scss'
+import { Application } from './runtime'
+
+const app = new Application()
+
+app.load('../src/components/landing/face/scene.json')
+
 
 const Face = () => {
     return (
