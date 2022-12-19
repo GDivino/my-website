@@ -1,27 +1,13 @@
 import { useState } from 'react'
-import Dashlabs from './Dashlabs'
-import Abakada from './Abakada'
-import GDSC from './GDSC'
-import Xendit from './Xendit'
 import '../../styles/experience.scss'
+import Companies from './ExperienceObjects.js'
+import Cards from './Cards'
 
 const Experience = () => {
-    const [org, setOrg] = useState('xendit')
+    const [org, setOrg] = useState(0)
 
-    const chooseDashlabs = () => {
-        setOrg('dashlabs')
-    }
-
-    const chooseAbakada = () => {
-        setOrg('abakada')
-    }
-
-    const chooseGdsc = () => {
-        setOrg('gdsc')
-    }
-
-    const chooseXendit = () => {
-        setOrg('xendit')
+    const changeOrg = (key) => {
+        setOrg(key)
     }
 
     return (
@@ -30,37 +16,24 @@ const Experience = () => {
                 <div data-aos='fade-right' className='title'><h2>Experience</h2></div>
                 <div className='experience-info'>
                     <div data-aos='fade-right' className='selection'>
-                    <ul>
-                        {
-                            (org == 'xendit') ?
-                                <li onClicl={chooseXendit} className='chosen'>Xendit (YC W15)</li>
-                                :
-                                <li onClick={chooseXendit}>Xendit (YC W15)</li>
-                        }
-                        {
-                            (org == 'dashlabs') ? 
-                                <li onClick={chooseDashlabs} className='chosen'>Dashlabs.ai (YC W21)</li> 
-                                : 
-                                <li onClick={chooseDashlabs}>Dashlabs.ai (YC W21)</li>
-                        }
-                        {
-                            (org == 'abakada') ? 
-                                <li onClick={chooseAbakada} className='chosen'>Abakada Studios</li> 
-                                : 
-                                <li onClick={chooseAbakada}>Abakada Studios</li>
-                        }
-                        {
-                            (org == 'gdsc') ? 
-                                <li onClick={chooseGdsc} className='chosen'>Google Developer Student Clubs Loyola</li> 
-                                : 
-                                <li onClick={chooseGdsc}>Google Developer Student Clubs Loyola</li>
-                        }
-                    </ul>
+                        <ul>
+                            {
+                                Companies.map((company, index) => {
+                                    return (
+                                        (org == index) ? 
+                                            <li onClick={() => changeOrg(index)} key={index} className='chosen'>{company.company}</li>
+                                            :
+                                            <li onClick={() => changeOrg(index)} key={index} >{company.company}</li>
+                                    )
+                                })
+                            }
+                        </ul>
                     </div>
-                    {(org == 'xendit') && <Xendit />}
-                    {(org == 'dashlabs') && <Dashlabs />}
-                    {(org == 'abakada') && <Abakada />}
-                    {(org == 'gdsc') && <GDSC />}
+                    {
+                        Companies.map((company, index) => {
+                            return (org == index) && <Cards key={index} value={company} />
+                        })
+                    }
                 </div>
             </div>
         </div>
