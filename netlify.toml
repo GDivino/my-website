@@ -5,3 +5,7 @@
 [[redirects]]
     from="/src/components/landing/face/scene.json"
     to="/assets/scene.json"
+
+[[redirects]]
+    from="/src/components/landing/face/raleway_regular.json"
+    to="/assets/raleway_regular.json"
