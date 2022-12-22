@@ -1,9 +1,8 @@
-import React, { lazy, Suspense } from 'react'
+import React from 'react'
 import { useEffect, useState } from 'react'
 import '../../styles/landing.scss'
 import { Link } from 'react-scroll'
-
-const Face = lazy(() => import('./face/Face'))
+import Face from './face/Face'
 
 const Landing = () => {   
     const [width, setWidth] = useState(window.innerWidth)
@@ -25,9 +24,7 @@ const Landing = () => {
         <div id='landing'>
             <div className='container'>
                 {width > 700 && 
-                    <Suspense fallback={<div>Loading...</div>}>
-                        <Face />
-                    </Suspense>
+                    <Face />
                 }
                 <Link 
                     to='contact'

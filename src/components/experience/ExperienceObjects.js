@@ -1,4 +1,4 @@
-const Companies = [
+export const Companies = [
     {
         "company": "Xendit (YC W15)",
         "short_name": "Xendit",
@@ -61,5 +61,3 @@ const Companies = [
         ]
     },
 ]
-
-export default Companies

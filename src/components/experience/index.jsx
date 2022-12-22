@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import '../../styles/experience.scss'
-import Companies from './ExperienceObjects.js'
+import { Companies } from './ExperienceObjects.js'
 import Cards from './Cards'
 
 const Experience = () => {
