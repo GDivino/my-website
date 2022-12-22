@@ -1,6 +1,3 @@
 [build]
     publish="dist/"
     command="npm run build && mv ./src/components/landing/face/scene.json ./dist/scene.json"
-[[redirects]]
-    from="/assets/scene.json"
-    to="/src/components/landing/face/scene.json"
