@@ -6,7 +6,7 @@ export const Companies = [
         "card": [
             {
                 "title": "Infrastructure Engineer Intern",
-                "date": "August 2021 - June 2022",
+                "date": "June 2022 - September 2022",
                 "desc": "Managed AWS resources for developers using terraform IaC, and supported infrastructure team with research on aggregated SSL certificate management and mirroring public container images into AWS ECR."
             }
         ]
@@ -31,24 +31,6 @@ export const Companies = [
     },
 
     {
-        "company": "Google Developer Student Clubs Loyola",
-        "short_name": "GDSC-L",
-        "link": "https://gdscloyola.org",
-        "card": [
-            {
-                "title": "Chief Technology Officer",
-                "date": "July 2021 - Present",
-                "desc": "Oversaw the development of 5 tech projects and 2 client projects, with 100% on-time delivery, by establishing Agile and DevOps processes, and ideating with teams."
-            },
-            {
-                "title": "Backend Engineer",
-                "date": "August 2020 - March 2021",
-                "desc": "Developed the products of the organization in the fields of cloud hosting, data integration, and frontend and backend integration using tools such as heroku, python, firebase, and flask"
-            }
-        ]
-    },
-
-    {
         "company": "Abakada Studios",
         "short_name": "Abakada Studios",
         "link": "https://abakadastudios.com",
@@ -60,4 +42,22 @@ export const Companies = [
             }
         ]
     },
+
+    {
+        "company": "Google Developer Student Clubs Loyola",
+        "short_name": "GDSC-L",
+        "link": "https://gdscloyola.org",
+        "card": [
+            {
+                "title": "Chief Technology Officer",
+                "date": "August 2021 - June 2022",
+                "desc": "Oversaw the development of 5 tech projects and 2 client projects, with 100% on-time delivery, by establishing Agile and DevOps processes, and ideating with teams."
+            },
+            {
+                "title": "Backend Engineer",
+                "date": "August 2020 - March 2021",
+                "desc": "Developed the products of the organization in the fields of cloud hosting, data integration, and frontend and backend integration using tools such as heroku, python, firebase, and flask"
+            }
+        ]
+    }
 ]
