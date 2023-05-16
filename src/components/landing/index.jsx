@@ -38,7 +38,7 @@ const Landing = () => {
                     <p className='greeting'>Hi my name is</p>
                     <h1 className='name'>Gio Divino.</h1>
                     <h4 className='short-desc'>I make Software Delivery a breeze</h4>
-                    <p className='long-desc'>I am a Manila-based DevOps Engineer that creates smooth operations, and builds healthy IT infrastructure. Currently, I am looking to help companies produce breakthrough innovations through DevOps.</p>
+                    <p className='long-desc'>I am a Manila-based DevOps Engineer focused on streamlining operations, optimizing infrastructure, and fostering a culture of innovation. I am currently looking for DevOps opportunities!</p>
                 </div>
             </div>
         </div>
