@@ -8,7 +8,7 @@ const About = () => {
                 <div className='about-details'>
                     <div className='p1'>
                         <h2>About Me</h2>
-                        <p>Hey there, I'm Gio! I am a DevOps Engineer that loves building things and learning new technologies.</p>
+                        <p>Hey there, I'm Gio! I am a Infrastructure Engineer that loves building things and learning new technologies.</p>
                             
                         <p> My tech journey started last August, 2020, just when the pandemic struck the world. I learned how to program, and built all sorts of things, and it was awesome! </p>
                         
@@ -24,11 +24,13 @@ const About = () => {
                             <li>Terraform</li>
                             <li>AWS</li>
                             <li>GCP</li>
+                            <li>Docker</li>
                         </ul>
                         <ul>
-                            <li>Docker</li>
-                            <li>NodeJS</li>
-                            <li>ReactJS</li>
+                            <li>CI/CD</li>
+                            <li>IAM</li>
+                            <li>Golang</li>
+                            <li>Bash</li>
                             <li>Typescript</li>
                         </ul>
                     </div>

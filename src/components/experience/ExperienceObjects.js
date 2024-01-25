@@ -65,7 +65,7 @@ export const Companies = [
             {
                 "title": "Chief Technology Officer",
                 "date": "August 2021 - June 2022",
-                "desc": "Oversaw the development of 5 tech projects and 2 client projects, with 100% on-time delivery, by establishing Agile and DevOps processes, and ideating with teams."
+                "desc": "Led the development of five tech projects and two client projects, with 100% on-time delivery, by establishing Agile and DevOps principles, guiding teams from ideation all the way to delivery"
             },
             {
                 "title": "Backend Engineer",
