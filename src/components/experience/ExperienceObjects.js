@@ -17,7 +17,7 @@ export const Companies = [
         ]
     },
     {
-        "company": "Bonito Technologies",
+        "company": "Bonito Tech",
         "short_name": "Bonito Tech",
         "link": "https://bonitotech.com",
         "card": [
