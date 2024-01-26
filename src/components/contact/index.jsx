@@ -44,7 +44,7 @@ const Contact = () => {
                 <ThemeProvider theme={THEME}>
                     <form data-aos='fade-right' action='https://formsubmit.co/77dad057a76794f5a701327436e6e08f' method='POST' className='form'>
                         <h3>Let's get in touch</h3>
-                        <p>Feel free to contact me for job opportunities or coffee chats by answering this form!</p>
+                        <p>Reach out to me regarding job opportunities, tech work, or even a simple coffee chat if you'd like!</p>
                         <CustomizedTextField
                             type='email'
                             name='email'
