@@ -7,7 +7,7 @@ export const Companies = [
             {
               "title": "Infrastructure Engineer",
               "date": "July 2023 - January 2024",
-              "desc": "Provided infrastructure support to product and initiative teams from infrastructure design and implementation to infrastructure maintenance, ensuring an ecosystem of reliable and scalable infrastructure, backing up an SLA of 99.99%."
+              "desc": "Provided infrastructure support to product and initiative teams from infrastructure design and implementation to infrastructure maintenance, ensuring an ecosystem of reliable and scalable infrastructure, backing up an SLA of 99.99%"
             },
             {
                 "title": "Infrastructure Engineer Intern",
@@ -24,7 +24,7 @@ export const Companies = [
             {
                 "title": "DevOps Engineer",
                 "date": "January 2023 - April 2023",
-                "desc": "Optimized the company's internal tooling and deployment processes by creating cost comparisons and systematizing deployment strategies for internal tools; simultaneously enhancing deployment efficiency through a CLI tool, and modernizing legacy terraform code."
+                "desc": "Optimized the company's internal tooling and deployment processes by creating cost comparisons and systematizing deployment strategies for internal tools; simultaneously enhancing deployment efficiency through a CLI tool, and modernizing legacy terraform code"
             },
         ]
     },
@@ -36,12 +36,12 @@ export const Companies = [
             {
                 "title": "Software Engineer",
                 "date": "August 2021 - November 2021",
-                "desc": "Coded unit tests and troubleshot frontend logic, increasing code coverage and enhancing code quality by 23%; and concurrently created automations for business teams and optimizing manual, yet important processes."
+                "desc": "Coded unit tests and troubleshot frontend logic, increasing code coverage and enhancing code quality by 23%; and concurrently created automations for business teams and optimizing manual, yet important processes"
             },
             {
                 "title": "Client Success Intern",
                 "date": "July 2021 - August 2021",
-                "desc": "Supported clients by troubleshooting product issues, retrieving relevant data, and automating manual processes."
+                "desc": "Supported clients by troubleshooting product issues, retrieving relevant data, and automating manual processes"
             }
         ]
     },
