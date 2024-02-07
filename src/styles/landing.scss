@@ -35,14 +35,14 @@
             cursor: pointer;
             pointer-events: all;
 
-            background: linear-gradient(to right, $light-purple 50%, transparent 50%);
-            background-size: 200% 100%;
-            background-position: right bottom;
-            transition: all .25s ease-out!important;
+            // background: linear-gradient(to right, $light-purple 50%, transparent 50%);
+            // background-size: 200% 100%;
+            // background-position: right bottom;
+            // transition: all .25s ease-out!important;
         }
 
         .button:hover {
-            background-position: left bottom;
+            background-color: $light-purple
         }
     }
 }
