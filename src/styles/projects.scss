@@ -166,15 +166,17 @@
     border-radius: 10px;
     cursor: pointer;
     pointer-events: all;
+    background-color: $white;
 
-    background: linear-gradient(to right, $light-purple 50%, transparent 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    transition: all .25s ease-out;
+    // background: linear-gradient(to right, $light-purple 50%, transparent 50%);
+    // background-size: 200% 100%;
+    // background-position: right bottom;
+    // transition: all .25s ease-out;
 }
 
 .view-button:hover {
-    background-position: left bottom;
+    // background-position: left bottom;
+    background-color: $light-purple
 }
 
 @media screen and (max-width: 900px) {

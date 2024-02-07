@@ -65,11 +65,14 @@
     .selection li:hover {
         color: $blue;
         background-position: left bottom;
+        // background-color: $light-purple;
         border-color: $blue;
     }
 
     .selection .chosen {
         border-color: $blue;
+        // background-color: $light-purple;
+        background-position: left bottom;
         color: $blue;
     }
 
