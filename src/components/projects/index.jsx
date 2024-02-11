@@ -11,15 +11,16 @@ const Projects = () => {
             <div className='container'>
                 <div data-aos='fade-right' className='project-details'>
                     <h3>Pavilion</h3>
-                    <p>Pavilion is an events management platform for University Organizations. It is the place to go to experience the University's org culture. <a href='https://staging.gpavilion.org/' target='_blank'>Website coming soon!</a></p>
+                    {/* <p>Pavilion is an events management platform for University Organizations. It is the place to go to experience the University's org culture. <a href='https://staging.gpavilion.org/' target='_blank'>Website coming soon!</a></p> */}
+                    <p>Pavilion is an events management platform for University Organizations. It is the place to go to experience the University's org culture. <br/>Website coming soon!</p>
                     <a href='https://github.com/gdsc-loyola/pavilion' className='link' target='_blank'>
                         <p>Github</p>
                         <img src={LinkImg}/>
                     </a>
-                    <a href='https://www.ceejatienza.com/project/pavilion' className='link' target='_blank'>
-                        <p>Case Study</p>
-                        <img src={LinkImg}/>
-                    </a>
+                    {/* <a href='https://www.ceejatienza.com/project/pavilion' className='link' target='_blank'> */}
+                    {/*     <p>Case Study</p> */}
+                    {/*     <img src={LinkImg}/> */}
+                    {/* </a> */}
                 </div>
                 <div data-aos='fade-left' className='project-img'><img src={PavImg} /></div>
             </div>
