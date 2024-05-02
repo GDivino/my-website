@@ -38,7 +38,7 @@ const Landing = () => {
                     <p className='greeting'>Hi my name is</p>
                     <h1 className='name'>Gio Divino.</h1>
                     <h4 className='short-desc'>I make Software Delivery a breeze</h4>
-                    <p className='long-desc'>I am a Manila-based Infrastructure Engineer building and delivering technology towards sustainable economic impact. I am currently looking for opportunities!</p>
+                    <p className='long-desc'>I am a Manila-based Infrastructure Engineer building and delivering technology towards sustainable economic impact. Currently, I automate and streamline tech ops in Fintech.</p>
                 </div>
             </div>
         </div>
