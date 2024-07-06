@@ -40,7 +40,7 @@ const Contact = () => {
         <div id='contact'>
             <div className='container'>
                 <h2 data-aos='fade-right' className='title'>Contact Me</h2>
-                <p data-aos='fade-left' className='desc'>I offer both Infrastructure Engineering and Fullstack Engineering services. Let me know if you want to collaborate on something! :)<br/><br/>I am also currently on the look out for job opportunities encompassing the disciplines of Infrastructure Engineering, DevOps Engineering, Site Reliability Engineering, and Platform Engineering.<br/><br/>Send me an email through the form below!</p>
+                <p data-aos='fade-left' className='desc'>I offer DevOps engineering services. Let me know if you want to collaborate on something! 😊<br/><br/>Send me an email through the form below.</p>
                 <ThemeProvider theme={THEME}>
                     <form data-aos='fade-right' action='https://formsubmit.co/77dad057a76794f5a701327436e6e08f' method='POST' className='form'>
                         <h3>Let's get in touch</h3>
