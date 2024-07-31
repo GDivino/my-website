@@ -1,6 +1,6 @@
 export const Companies = [
     {
-        "company": "ING",
+        "company": "ING Hubs PH",
         "short_name": "ING",
         "link": "https://ing.com",
         "card": [
