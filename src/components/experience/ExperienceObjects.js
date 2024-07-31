@@ -1,5 +1,17 @@
 export const Companies = [
     {
+        "company": "ING",
+        "short_name": "ING",
+        "link": "https://ing.com",
+        "card": [
+            {
+                "title": "DevOps Engineer",
+                "date": "April 2024 - Present",
+                "desc": "Helping teams move faster through automations and internal tooling"
+            }
+        ]
+    },
+    {
         "company": "Xendit (YC W15)",
         "short_name": "Xendit",
         "link": "https://xendit.co",
