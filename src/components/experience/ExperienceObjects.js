@@ -7,7 +7,7 @@ export const Companies = [
             {
                 "title": "DevOps Engineer",
                 "date": "April 2024 - Present",
-                "desc": "Helping teams move faster through automations and internal tooling"
+                "desc": "Building ING's first ever environment automation portal for 8000 engineers in over 40 countries."
             }
         ]
     },
