@@ -8,7 +8,7 @@ const About = () => {
                 <div className='about-details'>
                     <div className='p1'>
                         <h2>About Me</h2>
-                        <p>Hey there, I'm Gio! I am a Infrastructure Engineer that loves building things and learning new technologies.</p>
+                        <p>Hey there, I'm Gio! I am a Platform Engineer that loves building things and learning new technologies.</p>
                             
                         <p> My tech journey started last August, 2020, just when the pandemic struck the world. I learned how to program, and built all sorts of things, and it was awesome! </p>
                         
