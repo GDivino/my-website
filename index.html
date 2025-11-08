@@ -27,12 +27,5 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx" defer></script>
-    <script type="module" defer>
-      import ('/src/components/landing/face/runtime.js').then((module) => {
-        const { Application } = module
-        const app = new Application()
-        app.load('/src/components/landing/face/scene.json')
-      })
-    </script>
   </body>
 </html>

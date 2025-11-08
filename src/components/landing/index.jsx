@@ -1,31 +1,42 @@
-import React from 'react'
-import { useEffect, useState } from 'react'
-import '../../styles/landing.scss'
-import { Link } from 'react-scroll'
-import Face from './face/Face'
+import React, { Suspense, useState, useEffect } from 'react';
+import '../../styles/landing.scss';
+import { Link } from 'react-scroll';
+import Loading from '../loading';
+const Face = React.lazy(() => import('./face/Face'));
 
-const Landing = () => {   
-    const [width, setWidth] = useState(window.innerWidth)
+const Landing = () => {
+    const [width, setWidth] = useState(window.innerWidth);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         const changeWidth = () => {
-            setWidth(window.innerWidth)
-        }
+            setWidth(window.innerWidth);
+        };
 
-        window.addEventListener('resize', changeWidth)
+        window.addEventListener('resize', changeWidth);
+
+        if (window.innerWidth <= 700) {
+            setIsLoading(false);
+        }
 
         return () => {
-            window.removeEventListener('resize', changeWidth)
-        }
-        
-    }, [width])
-    
+            window.removeEventListener('resize', changeWidth);
+        };
+    }, [width]);
+
+    const handleFaceLoad = () => {
+        setIsLoading(false);
+    };
+
     return (
         <div id='landing'>
-            <div className='container'>
-                {width > 700 && 
-                    <Face />
-                }
+            {isLoading && width > 700 && <Loading />}
+            <div className='container' style={{ visibility: isLoading && width > 700 ? 'hidden' : 'visible' }}>
+                {width > 700 && (
+                    <Suspense fallback={null}>
+                        <Face onLoad={handleFaceLoad} />
+                    </Suspense>
+                )}
                 <Link 
                     to='contact'
                     smooth={true}
@@ -42,7 +53,7 @@ const Landing = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Landing
+export default Landing;
