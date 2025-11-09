@@ -1,0 +1,21 @@
+# .air.toml
+root = "."
+tmp_dir = "tmp"
+
+[build]
+  cmd = "go build -o ./tmp/main ."
+  bin = "tmp/main"
+  full_bin = "APP_ENV=development APP_PORT=8000 ./tmp/main"
+  include_ext = ["go", "html", "css", "js"]
+  exclude_dir = ["tmp"]
+
+[log]
+  level = "debug"
+
+[misc]
+  clean_on_exit = true
+
+[proxy]
+  enabled = true
+  proxy_port = 8080
+  app_port = 8000
